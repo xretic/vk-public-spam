@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default async (publicId: number) => {
+export default async (publicId: number): Promise<void> => {
 	await axios
 		.post(
 			encodeURI(
